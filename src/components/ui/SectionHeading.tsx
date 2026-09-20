@@ -13,7 +13,7 @@ export default function SectionHeading({
   title,
   intro,
   align = 'left',
-  tone = 'light',
+  tone = 'dark',
   className,
   as: Tag = 'h2'
 }: Props) {

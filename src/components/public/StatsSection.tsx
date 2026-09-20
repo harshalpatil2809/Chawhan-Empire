@@ -1,10 +1,10 @@
 import Container from '@/components/ui/Container';
 import { stats } from '@/data/company';
 
-export default function StatsSection({ tone = 'light' }: { tone?: 'light' | 'dark' }) {
+export default function StatsSection({ tone = 'dark' }: { tone?: 'light' | 'dark' }) {
   const dark = tone === 'dark';
   return (
-    <section className={dark ? 'bg-ink' : 'border-y border-concrete-dark bg-white'} aria-label="Company track record">
+    <section className={dark ? 'bg-[#0C1422]' : 'border-y border-concrete-dark bg-white'} aria-label="Company track record">
       <Container className="grid grid-cols-2 gap-px bg-transparent py-0 lg:grid-cols-4">
         {stats.map((s) => (
           <div

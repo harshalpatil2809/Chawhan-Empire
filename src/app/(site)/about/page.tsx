@@ -20,7 +20,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
+
+    <div className='min-h-screen text-center '>
+
+      <h1>Coming Soon</h1>
+      </div>
+      {/* <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight text-ink sm:text-5xl">
@@ -109,7 +114,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <CTASection />
+      <CTASection /> */}
     </>
   );
 }

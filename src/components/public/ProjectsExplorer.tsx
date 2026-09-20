@@ -43,7 +43,7 @@ export default function ProjectsExplorer() {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 border-y border-concrete-dark py-4 lg:flex-row lg:items-center lg:justify-between">
+      <div className="flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
         <div role="group" aria-label="Filter projects" className="flex flex-wrap gap-2">
           {filters.map((f) => (
             <button
@@ -72,11 +72,12 @@ export default function ProjectsExplorer() {
             placeholder="Search by name, city or type"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            className='rounded-lg'
           />
         </div>
       </div>
 
-      <p className="mt-4 text-sm text-ink-mute" aria-live="polite">
+      <p className="mt-4 text-sm text-white/60" aria-live="polite">
         {ready ? `${results.length} project${results.length === 1 ? '' : 's'}` : 'Loading projects'}
       </p>
 
@@ -87,7 +88,7 @@ export default function ProjectsExplorer() {
           ))}
         </div>
       ) : results.length === 0 ? (
-        <div className="mt-6 border border-dashed border-concrete-dark bg-white p-12 text-center">
+        <div className="mt-6 border border-dashed border-concrete-dark bg-[#0C1422] p-12 text-center">
           <h2 className="font-display text-lg font-semibold text-ink">No projects match that</h2>
           <p className="mx-auto mt-2 max-w-sm text-sm text-ink-mute">
             Try a different filter, or clear the search box to see the full portfolio.

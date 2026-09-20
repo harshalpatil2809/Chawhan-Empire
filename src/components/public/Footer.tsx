@@ -5,7 +5,7 @@ import { services } from '@/data/services';
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-concrete">
+    <footer className="bg-[#0C1422] text-concrete">
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
+      {/* <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
         <Container>
           <h1 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
             Services
@@ -66,7 +66,11 @@ export default function ServicesPage() {
         </section>
       ))}
 
-      <CTASection />
+      <CTASection /> */}
+      <div className='min-h-screen text-center '>
+
+      <h1>Coming Soon</h1>
+      </div>
     </>
   );
 }

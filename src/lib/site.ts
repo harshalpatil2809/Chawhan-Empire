@@ -5,9 +5,9 @@ export const site = {
   description:
     'BuildCraft Constructions is a Nagpur-based construction firm delivering residential, commercial and turnkey projects across Maharashtra.',
   url: 'https://buildcraft.demo',
-  phoneDisplay: '+91 98220 41567',
+  phoneDisplay: '+91 7720803593',
   // Demo number. Replace with the contractor's real WhatsApp number (country code, no +).
-  whatsappNumber: '919822041567',
+  whatsappNumber: '917720803593',
   whatsappMessage:
     'Hello BuildCraft Constructions, I would like to discuss a construction project.',
   email: 'projects@buildcraft.demo',

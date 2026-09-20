@@ -6,10 +6,10 @@ type Variant = 'primary' | 'secondary' | 'ghost' | 'danger';
 type Size = 'md' | 'sm';
 
 const base =
-  'inline-flex items-center justify-center gap-2 rounded-sm font-medium tracking-tight transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-steel focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60';
+  'inline-flex items-center justify-center gap-2 rounded-sm font-medium tracking-tight transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-steel focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 rounded';
 
 const variants: Record<Variant, string> = {
-  primary: 'bg-steel text-white hover:bg-steel-dark active:bg-steel-dark',
+  primary: 'bg-[#C79C43] text-white hover:bg-steel-dark active:bg-steel-dark',
   secondary: 'border border-ink/20 bg-white text-ink hover:border-ink/50 hover:bg-concrete/40',
   ghost: 'border border-white/40 text-white hover:bg-white/10',
   danger: 'border border-red-200 bg-white text-red-700 hover:bg-red-50'

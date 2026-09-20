@@ -16,7 +16,13 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
+
+    <div className='min-h-screen text-center '>
+
+      <h1>Coming Soon</h1>
+      </div>
+      
+      {/* <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
         <Container>
           <h1 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
             Contact us
@@ -95,7 +101,7 @@ export default function ContactPage() {
 
           <ContactForm />
         </Container>
-      </section>
+      </section> */}
     </>
   );
 }

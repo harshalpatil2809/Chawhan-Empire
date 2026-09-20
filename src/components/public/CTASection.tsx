@@ -14,7 +14,7 @@ export default function CTASection({
   href?: string;
 }) {
   return (
-    <section className="bg-steel-dark">
+    <section className="bg-[#0C1422] border-y border-white/35">
       <Container className="flex flex-col gap-8 py-16 lg:flex-row lg:items-center lg:justify-between">
         <div className="max-w-xl">
           <h2 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">

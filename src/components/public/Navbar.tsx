@@ -7,12 +7,13 @@ import Container from '@/components/ui/Container';
 import { ButtonLink } from '@/components/ui/Button';
 import { site } from '@/lib/site';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const links = [
   { href: '/', label: 'Home' },
+  { href: '/projects', label: 'Projects' },
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
-  { href: '/projects', label: 'Projects' },
   { href: '/contact', label: 'Contact' }
 ];
 
@@ -23,18 +24,10 @@ export default function Navbar() {
   useEffect(() => setOpen(false), [pathname]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-concrete-dark/70 bg-paper/95 backdrop-blur">
+    <header className="sticky top-0 z-40 bg-[#0C1422] backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-4 sm:h-20">
         <Link href="/" className="flex items-center gap-3" aria-label={`${site.name} home`}>
-          <span className="flex h-9 w-9 items-center justify-center bg-ink font-display text-sm font-bold text-signal">
-            BC
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-[15px] font-semibold tracking-tight text-ink">
-              BuildCraft
-            </span>
-            <span className="block text-[11px] text-ink-mute">Constructions</span>
-          </span>
+          <Image src="/Logo.png" alt='Logo' width={70} height={70}/>
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
@@ -46,8 +39,8 @@ export default function Navbar() {
                 href={l.href}
                 aria-current={active ? 'page' : undefined}
                 className={cn(
-                  'text-sm transition-colors hover:text-ink',
-                  active ? 'text-ink font-medium' : 'text-ink-mute'
+                  'text-sm transition-colors hover:text-[#e0b54f]',
+                  active ? 'text-[#CDA547] font-medium' : 'text-[#8b8181]'
                 )}
               >
                 {l.label}
