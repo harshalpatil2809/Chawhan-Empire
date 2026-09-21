@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #2f6f4e;
+  --secondary: #f0f7eb;
+  /* --secondary: #ecfdf5; */
+  --cards: #6b8e72;
+}
+
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
