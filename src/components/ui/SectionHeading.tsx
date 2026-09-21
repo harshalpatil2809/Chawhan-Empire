@@ -1,45 +1,35 @@
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 interface Props {
   title: string;
   intro?: string;
-  align?: 'left' | 'center';
-  tone?: 'light' | 'dark';
+  align?: "left" | "center";
+  tone?: "light" | "dark";
   className?: string;
-  as?: 'h2' | 'h3';
+  as?: "h2" | "h3";
 }
 
 export default function SectionHeading({
   title,
   intro,
-  align = 'left',
-  tone = 'dark',
+  align = "left",
+  tone = "dark",
   className,
-  as: Tag = 'h2'
+  as: Tag = "h2",
 }: Props) {
   return (
     <div
       className={cn(
-        'max-w-2xl',
-        align === 'center' && 'mx-auto text-center',
-        className
+        "max-w-2xl",
+        align === "center" && "mx-auto text-center",
+        className,
       )}
     >
-      <Tag
-        className={cn(
-          'font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl',
-          tone === 'dark' ? 'text-white' : 'text-ink'
-        )}
-      >
+      <Tag className="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl dark:text-white text-black">
         {title}
       </Tag>
       {intro ? (
-        <p
-          className={cn(
-            'mt-4 text-base leading-relaxed',
-            tone === 'dark' ? 'text-concrete/80' : 'text-ink-mute'
-          )}
-        >
+        <p className="mt-4 text-base leading-relaxed dark:text-white text-black">
           {intro}
         </p>
       ) : null}
