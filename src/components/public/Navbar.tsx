@@ -25,7 +25,7 @@ export default function Navbar() {
   useEffect(() => setOpen(false), [pathname]);
 
   return (
-    <header className="sticky top-0 z-40 dark:bg-[#0C1422] bg-[var(--secondary)] backdrop-blur">
+    <header className="sticky top-0 z-40 dark:bg-[#0C1422] bg-[var(--primary)] backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-4 sm:h-20">
         <Link
           href="/"
@@ -46,7 +46,7 @@ export default function Navbar() {
                 aria-current={active ? "page" : undefined}
                 className={cn(
                   "text-sm transition-colors hover:text-[#e0b54f]",
-                  active ? "text-[#CDA547] font-medium" : "text-[#8b8181]",
+                  active ? "text-[#CDA547] font-medium" : "text-[#cac8c8]",
                 )}
               >
                 {l.label}
@@ -56,6 +56,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:flex gap-5">
+          <ThemeToggle />
           <ButtonLink
             href="/request-a-quote"
             size="sm"
@@ -64,7 +65,6 @@ export default function Navbar() {
             Request a quote
           </ButtonLink>
 
-          <ThemeToggle />
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">

@@ -10,7 +10,7 @@ export default function StatsSection({
   return (
     // <section className={dark ? 'bg-[#0C1422]' : 'border-y border-concrete-dark bg-white'} aria-label="Company track record">
     <section
-      className="dark:bg-[#0C1422] border-y
+      className="dark:bg-[#0C1422] border-b
       border-concrete-dark
       bg-[var(--primary)]"
       aria-label="Company track record"

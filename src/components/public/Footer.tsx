@@ -2,22 +2,27 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { site, whatsappLink } from "@/lib/site";
 import { services } from "@/data/services";
+import Image from "next/image";
+import { Bodoni_Moda } from "next/font/google";
+
+const bodoni = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function Footer() {
   return (
-    <footer className="dark:bg-[#0C1422] bg-[var(--primary)] text-concrete">
+    <footer className="dark:bg-[#0e1624] bg-[var(--Footer)] text-concrete">
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center bg-signal font-display text-sm font-bold text-ink">
-              BC
-            </span>
-            <span className="font-display text-base font-semibold text-white">
-              {site.name}
-            </span>
+          <div className="flex flex-col items-center ">
+            <Image src="/Logo.png" alt="Logo" width={70} height={70} />
+            <h1 className={`text-[#E7B420] text-xl font-extrabold ${bodoni.className}`}>
+              Chawhan Empire
+            </h1>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-concrete/70">
-            Residential, commercial and turnkey construction across Nagpur and
+            Residential, commercial and turnkey construction across Chandrapur and
             Maharashtra since 2011. {site.tagline}
           </p>
         </div>

@@ -25,11 +25,11 @@ export default function SectionHeading({
         className,
       )}
     >
-      <Tag className="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl dark:text-white text-black">
+      <Tag className="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl ">
         {title}
       </Tag>
       {intro ? (
-        <p className="mt-4 text-base leading-relaxed dark:text-white text-black">
+        <p className="mt-4 text-base leading-relaxed ">
           {intro}
         </p>
       ) : null}

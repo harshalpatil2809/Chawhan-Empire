@@ -77,7 +77,7 @@ export default function ProjectsExplorer() {
             placeholder="Search by name, city or type"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="rounded-lg"
+            className="w-full rounded-lg"
           />
         </div>
       </div>

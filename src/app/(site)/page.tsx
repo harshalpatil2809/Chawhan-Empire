@@ -42,7 +42,7 @@ export default function HomePage() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <ButtonLink
                 href="/request-a-quote"
-                className="bg-signal text-ink hover:bg-signal/90"
+                className="bg-signal text-ink hover:bg-signal/90 "
               >
                 Request a quote
               </ButtonLink>
@@ -56,15 +56,15 @@ export default function HomePage() {
 
       <StatsSection />
 
-      <section className="dark:bg-[#0C1422] bg-[var(--secondary)] py-20 sm:py-24">
+      <section className="dark:bg-[#0C1422] bg-[var(--primary)] py-20 sm:py-24">
         <Container>
-          <div className="flex flex-wrap items-end justify-between gap-6 dark:text-white">
+          <div className="flex flex-wrap items-end justify-between gap-6 text-white">
             <SectionHeading
               title="Recent work"
               intro="A few projects from the last two years, in Nagpur, Pune, Wardha and Amravati."
             />
             <ButtonLink
-              className="dark:bg-[#DCE5DD] dark:hover:bg-[#DCE5DD]/80 dark:text-black bg-[var(--primary)] hover:bg-[#3F5F46]"
+              className="dark:bg-[#DCE5DD] dark:hover:bg-[#DCE5DD]/80 dark:text-black  hover:bg-[#3F5F46]"
               href="/projects"
               size="sm"
             >

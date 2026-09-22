@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <section className="border-b border-whit/50 dark:bg-[#0C1422] bg-[var(--secondary)] py-16 sm:py-20">
+      <section className="border-b border-whit/50 dark:bg-[#0C1422] bg-[var(--primary)] py-16 sm:py-20">
         <Container>
-          <h1 className="font-display text-4xl font-semibold tracking-tight dark:text-white/90 text-ink-soft sm:text-5xl">
+          <h1 className="font-display text-4xl font-semibold tracking-tight text-white/90  sm:text-5xl">
             Our projects
           </h1>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed dark:text-white/70 text-ink-soft">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/70 ">
             Every project here was built by our own engineers and site teams.
             Filter by type or status, and open any project for drawings-level
             detail on scope, duration and what was actually delivered.
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
         </Container>
       </section>
 
-      <section className="py-12 sm:py-16 dark:bg-[#0C1422] bg-[var(--secondary)]">
+      <section className="py-12 sm:py-16 dark:bg-[#0C1422] bg-[var(--primary)]">
         <Container>
           <ProjectsExplorer />
         </Container>

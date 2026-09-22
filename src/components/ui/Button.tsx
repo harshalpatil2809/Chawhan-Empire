@@ -6,7 +6,7 @@ type Variant = 'primary' | 'secondary' | 'ghost' | 'danger';
 type Size = 'md' | 'sm';
 
 const base =
-  'inline-flex items-center justify-center gap-2 rounded-sm font-medium tracking-tight transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-steel focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 rounded';
+  ' inline-flex items-center justify-center gap-2 rounded-sm font-medium tracking-tight transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-steel focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 rounded';
 
 const variants: Record<Variant, string> = {
   primary: 'bg-[#C79C43] text-white hover:bg-steel-dark active:bg-steel-dark',

@@ -13,7 +13,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Params): Metadata {
   const project = seedProjects.find((p) => p.slug === params.slug);
   if (!project) {
-    return { title: 'Project', description: 'Construction project by BuildCraft Constructions.' };
+    return { title: 'Project', description: 'Construction project by Chawhan Empires .' };
   }
   return {
     title: `${project.name} - ${project.location}`,

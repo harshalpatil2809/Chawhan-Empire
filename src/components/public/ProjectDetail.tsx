@@ -79,33 +79,33 @@ export default function ProjectDetail({ slug }: { slug: string }) {
         </Container>
       </div>
 
-      <section className="border-b border-concrete-dark bg-white">
+      <section className="border-b border-concrete-dark dark:bg-[#0C1422] bg-[var(--primary)]">
         <Container>
           <dl className="grid grid-cols-2 gap-x-6 gap-y-8 py-10 lg:grid-cols-4">
             {stats.map((s) => (
               <div key={s.label}>
-                <dt className="text-sm text-ink-mute">{s.label}</dt>
-                <dd className="mt-1 font-display text-xl font-semibold text-ink">{s.value}</dd>
+                <dt className="text-sm text-white">{s.label}</dt>
+                <dd className="mt-1 font-display text-xl font-semibold text-white/80">{s.value}</dd>
               </div>
             ))}
           </dl>
         </Container>
       </section>
 
-      <section className="py-16 sm:py-20">
+      <section className="py-16 sm:py-20 bg-[var(--primary)] dark:bg-[#0C1422]">
         <Container className="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2 className="font-display text-2xl font-semibold tracking-tight text-ink">
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-white">
               About this project
             </h2>
-            <p className="mt-4 text-[15px] leading-relaxed text-ink-mute">
+            <p className="mt-4 text-[15px] leading-relaxed text-white/80">
               {project.description}
             </p>
 
-            <h3 className="mt-10 font-display text-lg font-semibold text-ink">Highlights</h3>
+            <h3 className="mt-10 font-display text-lg font-semibold text-white">Highlights</h3>
             <ul className="mt-4 space-y-3">
               {project.highlights.map((h) => (
-                <li key={h} className="flex gap-3 text-[15px] leading-relaxed text-ink-mute">
+                <li key={h} className="flex gap-3 text-[15px] leading-relaxed text-white/80">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-steel" aria-hidden />
                   {h}
                 </li>
@@ -113,26 +113,26 @@ export default function ProjectDetail({ slug }: { slug: string }) {
             </ul>
           </div>
 
-          <aside className="border border-concrete-dark bg-white p-6">
-            <h2 className="font-display text-lg font-semibold text-ink">Scope of work</h2>
+          <aside className="p-6">
+            <h2 className="font-display text-lg font-semibold text-white">Scope of work</h2>
             <ul className="mt-4 divide-y divide-concrete">
               {project.scope.map((s) => (
-                <li key={s} className="py-3 text-sm leading-relaxed text-ink-mute">
+                <li key={s} className="py-3 text-sm leading-relaxed text-white/80">
                   {s}
                 </li>
               ))}
             </ul>
-            <p className="mt-5 border-t border-concrete pt-4 text-sm text-ink-mute">
+            <p className="mt-5 border-t border-concrete pt-4 text-sm text-white/80">
               {project.status === 'Completed' ? 'Handed over' : 'Expected handover'}:{' '}
-              <span className="font-medium text-ink">{formatDate(project.completionDate)}</span>
+              <span className="font-medium text-white/80">{formatDate(project.completionDate)}</span>
             </p>
           </aside>
         </Container>
       </section>
 
-      <section className="bg-concrete/40 py-16 sm:py-20">
+      <section className="bg-[var(--primary)] dark:bg-[#0C1422] py-16 sm:py-20">
         <Container>
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-ink">
+          <h2 className="font-display text-2xl font-semibold tracking-tight text-white">
             Project gallery
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -144,7 +144,7 @@ export default function ProjectDetail({ slug }: { slug: string }) {
                 <div className={i === 0 ? 'aspect-[16/9] bg-concrete' : 'aspect-[4/3] bg-concrete'}>
                   <SmartImage src={image.url} alt={image.alt} />
                 </div>
-                <figcaption className="mt-2 text-xs text-ink-mute">{image.alt}</figcaption>
+                <figcaption className="mt-2 text-xs text-white/80">{image.alt}</figcaption>
               </figure>
             ))}
           </div>
