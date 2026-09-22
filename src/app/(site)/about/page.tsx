@@ -6,6 +6,7 @@ import StatsSection from '@/components/public/StatsSection';
 import CTASection from '@/components/public/CTASection';
 import { team, values } from '@/data/company';
 import { img } from '@/data/images';
+import ComingSoon from '@/components/ui/ComingSoon';
 
 export const metadata: Metadata = {
   title: 'About us',
@@ -23,7 +24,7 @@ export default function AboutPage() {
 
     <div className='min-h-screen text-center '>
 
-      <h1>Coming Soon</h1>
+      <ComingSoon/>
       </div>
       {/* <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">

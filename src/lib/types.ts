@@ -5,7 +5,7 @@ export type ProjectCategory =
   | 'Interior'
   | 'Turnkey';
 
-export type ProjectStatus = 'Completed' | 'Ongoing';
+export type ProjectStatus = 'Completed' | 'Ongoing' | 'Coming Soon';
 
 export interface ProjectImage {
   url: string;

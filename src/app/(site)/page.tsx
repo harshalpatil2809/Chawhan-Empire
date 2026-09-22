@@ -10,6 +10,8 @@ import FeaturedProjects from "@/components/public/FeaturedProjects";
 import { services } from "@/data/services";
 import { processSteps, reasons, testimonials } from "@/data/company";
 import { img } from "@/data/images";
+import LocationSection from "@/components/public/LocationSection";
+import AboutSection from "@/components/public/AboutSection";
 
 export default function HomePage() {
   return (
@@ -26,7 +28,7 @@ export default function HomePage() {
         <Container className="relative py-24 sm:py-32 lg:py-40">
           <div className="max-w-2xl">
             <p className="text-sm font-medium text-signal">
-              Nagpur, Maharashtra
+              Chandrapur, Maharashtra
             </p>
             <h1 className="mt-4 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
               Building spaces.
@@ -76,7 +78,8 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
-
+      <AboutSection/>
+      <LocationSection/>
       <CTASection />
     </>
   );
