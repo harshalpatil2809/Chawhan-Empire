@@ -4,6 +4,7 @@ import SmartImage from '@/components/ui/SmartImage';
 import { ButtonLink } from '@/components/ui/Button';
 import CTASection from '@/components/public/CTASection';
 import { services } from '@/data/services';
+import ComingSoon from '@/components/ui/ComingSoon';
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -69,7 +70,8 @@ export default function ServicesPage() {
       <CTASection /> */}
       <div className='min-h-screen text-center '>
 
-      <h1>Coming Soon</h1>
+      {/* <h1>Coming Soon</h1> */}
+      <ComingSoon/>
       </div>
     </>
   );

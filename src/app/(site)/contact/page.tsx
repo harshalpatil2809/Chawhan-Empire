@@ -1,27 +1,26 @@
-import type { Metadata } from 'next';
-import Container from '@/components/ui/Container';
-import ContactForm from '@/components/public/ContactForm';
-import { site, whatsappLink } from '@/lib/site';
+import type { Metadata } from "next";
+import Container from "@/components/ui/Container";
+import ContactForm from "@/components/public/ContactForm";
+import { site, whatsappLink } from "@/lib/site";
+import ComingSoon from "@/components/ui/ComingSoon";
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: "Contact",
   description:
-    'Call, email or visit BuildCraft Constructions at our Ramdaspeth office in Nagpur. Office hours, map and contact form.',
+    "Call, email or visit BuildCraft Constructions at our Ramdaspeth office in Nagpur. Office hours, map and contact form.",
   openGraph: {
-    title: 'Contact BuildCraft Constructions',
-    description: 'Office address, phone, WhatsApp and enquiry form.'
-  }
+    title: "Contact BuildCraft Constructions",
+    description: "Office address, phone, WhatsApp and enquiry form.",
+  },
 };
 
 export default function ContactPage() {
   return (
     <>
-
-    <div className='min-h-screen text-center '>
-
-      <h1>Coming Soon</h1>
+      <div className="min-h-screen text-center ">
+        <ComingSoon />
       </div>
-      
+
       {/* <section className="border-b border-concrete-dark bg-white py-16 sm:py-20">
         <Container>
           <h1 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
