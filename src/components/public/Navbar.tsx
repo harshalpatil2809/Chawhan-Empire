@@ -9,6 +9,14 @@ import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
+import { Bodoni_Moda } from "next/font/google";
+
+
+
+const bodoni = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 const links = [
   { href: "/", label: "Home" },
@@ -30,10 +38,13 @@ export default function Navbar() {
       <Container className="flex h-16 items-center justify-between gap-4 sm:h-20">
         <Link
           href="/"
-          className="flex items-center gap-3"
+          className="flex items-center flex-col"
           aria-label={`${site.name} home`}
         >
-          <Image src="/Logo.png" alt="Logo" width={70} height={70} />
+          <Image src="/Logo.png" alt="Logo" width={50} height={50} />
+          <h1 className={`text-[#E7B420] text-xs font-extrabold ${bodoni.className}`}>
+              Chawhan Empire
+            </h1>
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
