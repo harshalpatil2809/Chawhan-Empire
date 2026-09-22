@@ -10,6 +10,7 @@ import FeaturedProjects from "@/components/public/FeaturedProjects";
 import { services } from "@/data/services";
 import { processSteps, reasons, testimonials } from "@/data/company";
 import { img } from "@/data/images";
+import LocationSection from "@/components/public/LocationSection";
 
 export default function HomePage() {
   return (
@@ -76,7 +77,7 @@ export default function HomePage() {
           </div>
         </Container>
       </section>
-
+      <LocationSection/>
       <CTASection />
     </>
   );
