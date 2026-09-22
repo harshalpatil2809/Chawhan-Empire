@@ -152,9 +152,9 @@ export default function ProjectDetail({ slug }: { slug: string }) {
       </section>
 
       {hasBeforeAfter ? (
-        <section className="py-16 sm:py-20">
+        <section className="py-16 sm:py-20 bg-[var(--primary)] dark:bg-[#0C1422]">
           <Container>
-            <h2 className="font-display text-2xl font-semibold tracking-tight text-ink">
+            <h2 className="font-display text-2xl font-semibold tracking-tight text-white">
               Before and after
             </h2>
             <div className="mt-8 space-y-8">
@@ -167,7 +167,7 @@ export default function ProjectDetail({ slug }: { slug: string }) {
                       <div className="aspect-[4/3] bg-concrete">
                         <SmartImage src={before.url} alt={before.alt} />
                       </div>
-                      <figcaption className="mt-2 text-sm font-medium text-ink-mute">
+                      <figcaption className="mt-2 text-sm font-medium text-white/80">
                         Before
                       </figcaption>
                     </figure>
@@ -175,7 +175,7 @@ export default function ProjectDetail({ slug }: { slug: string }) {
                       <div className="aspect-[4/3] bg-concrete">
                         <SmartImage src={after.url} alt={after.alt} />
                       </div>
-                      <figcaption className="mt-2 text-sm font-medium text-ink">After</figcaption>
+                      <figcaption className="mt-2 text-sm font-medium text-white/80">After</figcaption>
                     </figure>
                   </div>
                 );
