@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 :root {
-  /* --primary: #355E4B; */
-  /* --primary: #3E5F45; */
-  /* --primary: #264D3A; */
-  --primary: #2f6f4e;
+  /* --primary: #003E39; */
+  --primary: #002A28;
   --secondary: #f0f7eb;
   /* --secondary: #ecfdf5; */
   --cards: #6b8e72;
-  --Footer : #1F4D36;
+  --Footer : #002A28;
 }
 
 @layer base {

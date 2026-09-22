@@ -9,6 +9,84 @@ const make = (p: Omit<Project, 'createdAt'> & { createdAt?: string }): Project =
 export const seedProjects: Project[] = [
   make({
     id: 'p-001',
+    slug: 'chawhan-empires',
+    name: 'Chawhan Empire Pride',
+    location: 'Chandrapur, Maharashtra',
+    category: 'Residential',
+    status: 'Ongoing',
+    featured: true,
+    published: true,
+    summary:
+      'A 220-seat office across two floors with meeting rooms, a cafeteria and a server room.',
+    description:
+      'A bare-shell commercial floor being converted into a working office for a software services firm. Work is sequenced so that the fire and HVAC services are completed and tested before ceilings close, and the server room is handed over four weeks ahead of the main floor so IT can begin installation. The client occupies the building in phases.',
+    completionDate: '2027-09-20',
+    size: '18,000 sq.ft.',
+    duration: '7 Months',
+    client: 'Nexora Systems Pvt. Ltd.',
+    coverImage: "/ChauhanEmpire.png",
+    images: [
+      { url: img.officeInterior, alt: 'Open plan workstation area under fit-out' },
+      { url: img.officeMeeting, alt: 'Glass-partitioned meeting room' },
+      { url: img.officeTower, alt: 'Exterior of the office building in Hinjawadi' }
+    ],
+    beforeImages: [],
+    afterImages: [],
+    scope: [
+      'Demolition and levelling of the bare shell',
+      'Glass partitions, gypsum walls and false ceiling',
+      'HVAC ducting, fire detection and suppression',
+      'Electrical, data cabling and UPS room',
+      'Workstations, storage and cafeteria fit-out'
+    ],
+    highlights: [
+      'Server room handed over four weeks ahead of the main floor',
+      'Fire compliance documentation managed in-house',
+      'Phased occupation so the client keeps working through the build'
+    ]
+  }),
+
+  make({
+    id: 'p-002',
+    slug: 'chawhan-regal',
+    name: 'Chawhan Empire Regal',
+    location: 'Chandrapur, Maharashtra',
+    category: 'Residential',
+    status: 'Ongoing',
+    featured: true,
+    published: true,
+    summary:
+      'A turnkey five-bedroom residence delivered furnished, from drawings to keys.',
+    description:
+      'A single contract covering design, approvals, construction and interiors. The house sits on a corner plot in Civil Lines, with the living areas turned away from the road for privacy. Stone cladding, a home theatre, a lift and a basement parking level were part of the original scope, so services were planned before the foundation rather than retrofitted.',
+    completionDate: '2028-08-29',
+    size: '18,200 sq.ft.',
+    duration: '18 Months',
+    client: 'Agrawal Family',
+    coverImage: "/ChauhanRegal.png",
+    images: [
+      { url: img.residenceLux, alt: 'Evening view of the luxury residence in Civil Lines' },
+      { url: img.villaLiving, alt: 'Formal living room with stone feature wall' },
+      { url: img.interiorWork, alt: 'Master bedroom with fitted wardrobes' },
+      { url: img.siteCrane, alt: 'Basement excavation during the early construction stage' }
+    ],
+    beforeImages: [],
+    afterImages: [],
+    scope: [
+      'Design, structural drawings and sanctions',
+      'Basement excavation, shoring and waterproofing',
+      'RCC frame, stone cladding and roofing',
+      'Lift, home automation and home theatre',
+      'Full interiors, furniture and landscaping'
+    ],
+    highlights: [
+      'Single contract from first drawing to furnished handover',
+      'Basement raft waterproofed with a double membrane system',
+      'Home automation and AV conduiting planned before casting'
+    ]
+  }),
+  make({
+    id: 'p-003',
     slug: 'modern-villa-nagpur',
     name: 'Modern Villa',
     location: 'Besa, Nagpur',
@@ -48,7 +126,7 @@ export const seedProjects: Project[] = [
     ]
   }),
   make({
-    id: 'p-002',
+    id: 'p-004',
     slug: 'green-valley-residence-wardha',
     name: 'Green Valley Residence',
     location: 'Wardha',
@@ -83,83 +161,6 @@ export const seedProjects: Project[] = [
       'Jaali stair wall acts as a passive exhaust for hot air',
       'Vitrified flooring throughout with a 10-year supplier warranty',
       'Completed within the original approved budget'
-    ]
-  }),
-  make({
-    id: 'p-003',
-    slug: 'corporate-office-pune',
-    name: 'Chauhan Empire',
-    location: 'Chandrapur, Maharashtra',
-    category: 'Commercial',
-    status: 'Coming Soon',
-    featured: true,
-    published: true,
-    summary:
-      'A 220-seat office across two floors with meeting rooms, a cafeteria and a server room.',
-    description:
-      'A bare-shell commercial floor being converted into a working office for a software services firm. Work is sequenced so that the fire and HVAC services are completed and tested before ceilings close, and the server room is handed over four weeks ahead of the main floor so IT can begin installation. The client occupies the building in phases.',
-    completionDate: '2027-09-20',
-    size: '18,000 sq.ft.',
-    duration: '7 Months',
-    client: 'Nexora Systems Pvt. Ltd.',
-    coverImage: "/ChauhanEmpire.png",
-    images: [
-      { url: img.officeInterior, alt: 'Open plan workstation area under fit-out' },
-      { url: img.officeMeeting, alt: 'Glass-partitioned meeting room' },
-      { url: img.officeTower, alt: 'Exterior of the office building in Hinjawadi' }
-    ],
-    beforeImages: [],
-    afterImages: [],
-    scope: [
-      'Demolition and levelling of the bare shell',
-      'Glass partitions, gypsum walls and false ceiling',
-      'HVAC ducting, fire detection and suppression',
-      'Electrical, data cabling and UPS room',
-      'Workstations, storage and cafeteria fit-out'
-    ],
-    highlights: [
-      'Server room handed over four weeks ahead of the main floor',
-      'Fire compliance documentation managed in-house',
-      'Phased occupation so the client keeps working through the build'
-    ]
-  }),
-  make({
-    id: 'p-004',
-    slug: 'luxury-residence-nagpur',
-    name: 'Chauhan Regal',
-    location: 'Chandrapur, Maharashtra',
-    category: 'Commercial',
-    status: 'Coming Soon',
-    featured: true,
-    published: true,
-    summary:
-      'A turnkey five-bedroom residence delivered furnished, from drawings to keys.',
-    description:
-      'A single contract covering design, approvals, construction and interiors. The house sits on a corner plot in Civil Lines, with the living areas turned away from the road for privacy. Stone cladding, a home theatre, a lift and a basement parking level were part of the original scope, so services were planned before the foundation rather than retrofitted.',
-    completionDate: '2028-08-29',
-    size: '18,200 sq.ft.',
-    duration: '18 Months',
-    client: 'Agrawal Family',
-    coverImage: "/ChauhanRegal.png",
-    images: [
-      { url: img.residenceLux, alt: 'Evening view of the luxury residence in Civil Lines' },
-      { url: img.villaLiving, alt: 'Formal living room with stone feature wall' },
-      { url: img.interiorWork, alt: 'Master bedroom with fitted wardrobes' },
-      { url: img.siteCrane, alt: 'Basement excavation during the early construction stage' }
-    ],
-    beforeImages: [],
-    afterImages: [],
-    scope: [
-      'Design, structural drawings and sanctions',
-      'Basement excavation, shoring and waterproofing',
-      'RCC frame, stone cladding and roofing',
-      'Lift, home automation and home theatre',
-      'Full interiors, furniture and landscaping'
-    ],
-    highlights: [
-      'Single contract from first drawing to furnished handover',
-      'Basement raft waterproofed with a double membrane system',
-      'Home automation and AV conduiting planned before casting'
     ]
   }),
   make({

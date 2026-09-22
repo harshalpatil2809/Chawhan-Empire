@@ -29,7 +29,7 @@ import { createId, slugify } from '@/lib/utils';
  */
 
 const KEYS = {
-  projects: 'buildcraft.projects.v1',
+  projects: 'buildcraft.projects.v2',
   enquiries: 'buildcraft.enquiries.v1',
   messages: 'buildcraft.messages.v1'
 };
